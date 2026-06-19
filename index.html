@@ -664,6 +664,7 @@
   }
   .proj-nav-item[data-target="sp"]::before { background: linear-gradient(180deg, #ff8d6b, #6a4dff); }
   .proj-nav-item[data-target="sc"]::before { background: linear-gradient(180deg, #fff36b, #ff3d2e); }
+  .proj-nav-item[data-target="pt"]::before { background: linear-gradient(180deg, #8effc1, #1f9d55); }
   .proj-nav-item[data-target="ai"]::before { background: linear-gradient(180deg, #4dffea, #4d6bff); }
   .proj-nav-item.active::before,
   .proj-nav-item:hover::before { opacity: 1; }
@@ -738,6 +739,7 @@
   }
   .proj-panel.panel-sp::before { background: linear-gradient(90deg, #ff8d6b, #6a4dff); }
   .proj-panel.panel-sc::before { background: linear-gradient(90deg, #fff36b, #ff3d2e); }
+  .proj-panel.panel-pt::before { background: linear-gradient(90deg, #8effc1, #1f9d55); }
   .proj-panel.panel-ai::before { background: linear-gradient(90deg, #4dffea, #4d6bff); }
 
   .proj-panel-header {
@@ -1463,8 +1465,17 @@
           </div>
           <span class="proj-nav-arrow">→</span>
         </div>
-        <div class="proj-nav-item" data-target="ai" data-hover>
+        <div class="proj-nav-item" data-target="pt" data-hover>
           <div class="proj-nav-num">/03</div>
+          <div class="proj-nav-name">Portfolio Tracker</div>
+          <div class="proj-nav-meta">
+            <span>FinTech</span>
+            <span class="live">● Open Source</span>
+          </div>
+          <span class="proj-nav-arrow">→</span>
+        </div>
+        <div class="proj-nav-item" data-target="ai" data-hover>
+          <div class="proj-nav-num">/04</div>
           <div class="proj-nav-name">AI Suite</div>
           <div class="proj-nav-meta">
             <span>Automation</span>
@@ -1551,6 +1562,48 @@
                 <span class="proj-label">Stack</span>
                 <div class="proj-stack">
                   <span>Generative AI</span><span>SaaS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Tracker -->
+        <div class="proj-panel panel-pt" id="panel-pt">
+          <div class="proj-panel-header">
+            <h3 class="proj-panel-title">Portfolio Tracker</h3>
+            <a href="https://github.com/moff05/portfolio-tracker" target="_blank" rel="noopener" class="proj-visit" data-hover>View Code ↗</a>
+          </div>
+          <div class="proj-body">
+            <div>
+              <div class="proj-section">
+                <span class="proj-label">The Problem</span>
+                <p>Real performance tracking — TWR, IRR, tax-loss harvesting, income — doesn't come standard on any broker export. Most investors either pay for a service that wants account access, or do it by hand in a spreadsheet.</p>
+              </div>
+              <div class="proj-section">
+                <span class="proj-label">What I Built</span>
+                <p>A self-hosted desktop app that ingests broker exports straight into a local database and turns raw transaction history into real portfolio analytics — fully offline-capable, with an AI chat layer to ask questions in plain English.</p>
+              </div>
+            </div>
+            <div>
+              <div class="proj-section">
+                <span class="proj-label">Highlights</span>
+                <ul>
+                  <li>Time-weighted return and dollar-weighted IRR computed from actual cash-flow history, not estimated</li>
+                  <li>Per-position performance attribution, volatility, max drawdown, and Sharpe ratio</li>
+                  <li>FIFO/HIFO tax-lot tracking with wash-sale risk flags and estimated tax savings</li>
+                  <li>Built-in AI chat grounded in live holdings, prices, and transaction history</li>
+                  <li>Packaged as a native Electron app for Windows &amp; macOS — fully local, no accounts</li>
+                </ul>
+              </div>
+              <div class="proj-section">
+                <span class="proj-label">Stack</span>
+                <div class="proj-stack">
+                  <span data-tip="Runtime &amp; embedded local server">Bun</span>
+                  <span data-tip="Full-stack React framework">TanStack Start</span>
+                  <span data-tip="Local-only database, zero cloud">SQLite</span>
+                  <span data-tip="Native desktop packaging">Electron</span>
+                  <span data-tip="Powers the in-app portfolio chat">Claude AI</span>
                 </div>
               </div>
             </div>

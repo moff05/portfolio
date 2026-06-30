@@ -502,6 +502,43 @@
     .about-aside { position: static; }
   }
 
+  /* ---------- STAT CARDS ---------- */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+    margin-bottom: 0;
+  }
+  .stat-card {
+    padding: 2.5rem 2rem;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .stat-num {
+    font-family: 'Instrument Serif', serif;
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin-bottom: 0.6rem;
+  }
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.6rem;
+  }
+  .stat-desc {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  @media (max-width: 700px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
   /* ---------- EXPERIENCE ---------- */
   .exp-list {
     border-top: 1px solid var(--line);
@@ -1256,7 +1293,7 @@
       </aside>
 
       <div class="about-body reveal">
-        <p>I started <strong>Eduply</strong> as a prompt engineer in college and watched generative AI tools I'd built get adopted by <span class="hl">Atlanta Public Schools and Georgia Tech</span> — that's when this stopped being a hobby and started being a career.</p>
+        <p>As a prompt engineer at <strong>Eduply</strong>, I designed generative AI tools for educators — chatbots that ended up being adopted by <span class="hl">Atlanta Public Schools and Georgia Tech</span>. That's when this stopped being a hobby and started being a career.</p>
 
         <p class="pull">I'm drawn to the gap between what's possible with AI and what's actually shipping in real businesses. That gap is where I work.</p>
 
@@ -1265,6 +1302,34 @@
         <p>Around the same time, the President of Investments asked me to find a faster way to do stacking plans. He meant a better Excel template. I interpreted it as a Python script and a website. That interpretation became the seed for <strong>N&S Digital LLC</strong>, the company I co-founded to ship products like <strong>scholairly.com</strong> (now serving 100+ users) and <strong>StackingPlanner</strong>.</p>
 
         <p>Today I'm an Investment Intern at <strong>Goldenrod Companies</strong>, building AI workflows on n8n, OpenAI, and Claude that turn raw tenancy schedules into structured financial models. It's the kind of work I want to keep doing: <strong>find the manual thing, build the automated thing, give the humans their time back.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAT CARDS -->
+<section id="stats">
+  <div class="wrap">
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <div class="stat-num">3.71</div>
+        <div class="stat-label">Academic</div>
+        <div class="stat-desc">GPA at University of Miami Herbert Business School</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">360×</div>
+        <div class="stat-label">Proptech</div>
+        <div class="stat-desc">Faster stacking plan creation — 3 hrs down to 30 sec</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">150+</div>
+        <div class="stat-label">Founder</div>
+        <div class="stat-desc">Users reached across AI productivity tools</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Built</div>
+        <div class="stat-desc">Live products shipped across PropTech, EdTech, and FinTech</div>
       </div>
     </div>
   </div>

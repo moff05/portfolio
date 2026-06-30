@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio site. Work in progress.
+Personal portfolio site — live at [nmoffett.com](https://nmoffett.com).
 
 Built with vanilla HTML/CSS/JS. Single page, no build step, no dependencies.
 
